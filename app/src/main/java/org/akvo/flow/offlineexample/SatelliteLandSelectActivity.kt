@@ -73,7 +73,7 @@ class SatelliteLandSelectActivity : AppCompatActivity(), OnMapReadyCallback {
             initCircleLayer(style)
             initLineLayer(style)
             initFillLayer(style)
-            initCircleLayerSelected(style)
+            initTextLayer(style)
 
             initFloatingActionButtonClickListeners()
         }
@@ -192,7 +192,7 @@ class SatelliteLandSelectActivity : AppCompatActivity(), OnMapReadyCallback {
         loadedMapStyle.addLayer(circleLayer)
     }
 
-    private fun initCircleLayerSelected(loadedMapStyle: Style) {
+    private fun initTextLayer(loadedMapStyle: Style) {
         val symbolLayer = SymbolLayer(
             CIRCLE_LAYER_ID_SELECTED,
             CIRCLE_SOURCE_ID
